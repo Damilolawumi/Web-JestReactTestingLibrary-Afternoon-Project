@@ -27,6 +27,14 @@ export function multiply(a, b) {
 export function personMaker(name, age) {
   if(!name || !age) {
     return null
+  } else if (typeof name !== 'string') {
+throw new Error ('');
+  }
+  else if (typeof age !== 'number') {
+    throw new Error ('');
+  }
+   else if (age < 0) {
+    throw new Error('COMMON! thats a negative number');
   }
   return {
     id: uuid(),
