@@ -25,6 +25,9 @@ export function multiply(a, b) {
 }
 
 export function personMaker(name, age) {
+  if(!name || !age) {
+    return null
+  }
   return {
     id: uuid(),
     name,
