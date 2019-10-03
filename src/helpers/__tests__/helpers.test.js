@@ -28,6 +28,20 @@ describe('sum', () => {
 
 describe('multiply', () => {
   // write tests! <================================================
+  it('can multiply two numbers', () => {
+    expect(helpers.multiply(2, 3)).toBe(6);
+    expect(helpers.multiply(2, 3)).not.toBe(9);
+  });
+
+  it('can multiply two negative numbers', () => {
+    expect(helpers.multiply( -2, -3)).toBe(6);
+    expect(helpers.multiply( -2, -3)).not.toBe(9);
+  });
+
+  it('can multiply decimal number', () => {
+    expect(helpers.multiply( 0.85, 0.65)).toBe(0.5525);
+    expect(helpers.multiply( 2, 3)).not.toBe(0.9);
+  });
 });
 
 describe('personMaker', () => {
