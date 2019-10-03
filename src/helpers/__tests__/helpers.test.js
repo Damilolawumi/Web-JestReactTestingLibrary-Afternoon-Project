@@ -58,8 +58,11 @@ describe('personMaker', () => {
     expect(helpers.personMaker()).toBe(null);
   });
 
+
+  it('throws an error if age is a negative number', () => {
+    expect(() => helpers.personMaker('Dammy',-2)).toThrow();
+  });
+
   
-
-
   // write more tests! <===========================================
 });
