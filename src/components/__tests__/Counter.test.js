@@ -87,9 +87,7 @@ describe('Counter component', () => {
     }
     expect(tools.queryByText(new RegExp('as high as', 'ig'))).toBeInTheDocument();
     expect(tools.queryByText(new RegExp(countLimit))).toBeInTheDocument();
-    // count === countLimit &&
-    // <h5 style={{ color: 'red' }}>That's as high as {user}'s count will go</h5>
-    
+      
   });
 
   it('shows a warning once we hit the lower limit of the counter', () => {
